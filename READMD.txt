@@ -1,0 +1,18 @@
+    Meaning of some terms in XML file
+    
+    folder — the parent directory of the image.
+    filename — the name of the image (including extension).
+    path — the absolute path of the image
+    source:database — the original location of the file in a database. Only applicable if a database is used. Otherwise, it will default to Unknown.
+    size:width — the width of the image in pixels.
+    size:height — the height of the image in pixels.
+    size:depth — the depth of the image. For object detection tasks, it represents the number of channels.
+    segmented — determines if the annotations are linear (0) or non-linear (1). Non-linear refers to polygon shapes.
+    object:name — the label for the object.
+    object:pose — determines if the object is of different orientation. Normal images default to Unspecified.
+    object:truncated — determines if the object fully (0) or partially visible (1). Partially visible refers to object that is hidden behind another object.
+    object:difficult — determines if the object can be easily recognize (0) or difficult to recognize (1).
+    object:bndbox:xmin — the x coordinate of the top-left position.
+    object:bndbox:ymin — the y coordinate of the top-left position.
+    object:bndbox:xmax — the x coordinate of the bottom-right position.
+    object:bndbox:ymax — the y coordinate of the bottom-right position.
